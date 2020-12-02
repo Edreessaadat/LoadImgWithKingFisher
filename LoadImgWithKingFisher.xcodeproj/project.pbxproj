@@ -13,9 +13,11 @@
 		57811D8925772DF100087C60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57811D8725772DF100087C60 /* Main.storyboard */; };
 		57811D8B25772DF400087C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57811D8A25772DF400087C60 /* Assets.xcassets */; };
 		57811D8E25772DF400087C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57811D8C25772DF400087C60 /* LaunchScreen.storyboard */; };
+		699EA7C67E5951F1DDAD73A3 /* Pods_LoadImgWithKingFisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2229387DFAEC7141CBD756 /* Pods_LoadImgWithKingFisher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05284DE0EF7A34EAFDF6932B /* Pods-LoadImgWithKingFisher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoadImgWithKingFisher.debug.xcconfig"; path = "Target Support Files/Pods-LoadImgWithKingFisher/Pods-LoadImgWithKingFisher.debug.xcconfig"; sourceTree = "<group>"; };
 		57811D7E25772DF100087C60 /* LoadImgWithKingFisher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadImgWithKingFisher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57811D8125772DF100087C60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57811D8325772DF100087C60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		57811D8A25772DF400087C60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57811D8D25772DF400087C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57811D8F25772DF400087C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A2229387DFAEC7141CBD756 /* Pods_LoadImgWithKingFisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoadImgWithKingFisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD2666C26FF87923A28256DB /* Pods-LoadImgWithKingFisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoadImgWithKingFisher.release.xcconfig"; path = "Target Support Files/Pods-LoadImgWithKingFisher/Pods-LoadImgWithKingFisher.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				699EA7C67E5951F1DDAD73A3 /* Pods_LoadImgWithKingFisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				57811D8025772DF100087C60 /* LoadImgWithKingFisher */,
 				57811D7F25772DF100087C60 /* Products */,
+				F658E2AC722653ACA4BAF47E /* Pods */,
+				814C8130F6041346236F3FC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = LoadImgWithKingFisher;
 			sourceTree = "<group>";
 		};
+		814C8130F6041346236F3FC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A2229387DFAEC7141CBD756 /* Pods_LoadImgWithKingFisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F658E2AC722653ACA4BAF47E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05284DE0EF7A34EAFDF6932B /* Pods-LoadImgWithKingFisher.debug.xcconfig */,
+				FD2666C26FF87923A28256DB /* Pods-LoadImgWithKingFisher.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57811D9225772DF400087C60 /* Build configuration list for PBXNativeTarget "LoadImgWithKingFisher" */;
 			buildPhases = (
+				4D8DD1F1E0596B12058DFCCA /* [CP] Check Pods Manifest.lock */,
 				57811D7A25772DF100087C60 /* Sources */,
 				57811D7B25772DF100087C60 /* Frameworks */,
 				57811D7C25772DF100087C60 /* Resources */,
+				BB5798241C66FAA29D50698B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D8DD1F1E0596B12058DFCCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoadImgWithKingFisher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB5798241C66FAA29D50698B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoadImgWithKingFisher/Pods-LoadImgWithKingFisher-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoadImgWithKingFisher/Pods-LoadImgWithKingFisher-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoadImgWithKingFisher/Pods-LoadImgWithKingFisher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		57811D7A25772DF100087C60 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		57811D9325772DF400087C60 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05284DE0EF7A34EAFDF6932B /* Pods-LoadImgWithKingFisher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		57811D9425772DF400087C60 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD2666C26FF87923A28256DB /* Pods-LoadImgWithKingFisher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
